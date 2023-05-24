@@ -16,14 +16,28 @@
  */
 package se.hirt.jmc.tutorial.donothing;
 
-import java.io.IOException;
+//import java.io.IOException;
+import java.io.*;
+
+
 
 /**
  * Program that doesn't do much.
  */
 public class DoNothing {
 	public static void main(String[] args) throws IOException {
-		System.out.println("Press <enter> to quit!");
-		System.in.read();
+		System.out.println("Press <enter> to quit! Otherwise, <enter> an alphanumeric string:");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();
+		System.out.println("You entered: " + str);				
+		System.out.println("The length of the string is: " + countStringLen(str));				
+		System.out.println("Hello copilot!");				
 	}
+
+	/* Create a method named countStringLen to count the length of the string entered in main.  Call the method from main */
+	public static int countStringLen(String str) {
+		return str.length();
+	}
+
+
 }
