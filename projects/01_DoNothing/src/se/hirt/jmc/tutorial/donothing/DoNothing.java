@@ -40,7 +40,7 @@ public class DoNothing {
 		return str.length();
 	}
 
-	/* Create a method to reverse string */
+	/* Create a method to reverse string  - created by copilot*/
 	public static String reverseString(String str) {		
 		String reverse = "";
 		int len = countStringLen(str) - 1;
