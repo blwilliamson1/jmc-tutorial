@@ -31,7 +31,7 @@ public class DoNothing {
 		String str = br.readLine();
 		System.out.println("You entered: " + str);				
 		System.out.println("The length of the string is: " + countStringLen(str));				
-		System.out.println("Hello copilot!");				
+		System.out.println("Hello copilot! Testing connection to GitHub 2!");				
 	}
 
 	/* Create a method named countStringLen to count the length of the string entered in main.  Call the method from main */
