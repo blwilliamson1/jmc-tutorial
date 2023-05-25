@@ -32,12 +32,23 @@ public class DoNothing {
 		System.out.println("You entered: " + str);				
 		System.out.println("The length of the string is: " + countStringLen(str));				
 		System.out.println("Hello copilot! Testing connection to GitHub 2!");				
+		System.out.println("The reverse of the string is: " + reverseString(str));
 	}
 
 	/* Create a method named countStringLen to count the length of the string entered in main.  Call the method from main */
 	public static int countStringLen(String str) {
 		return str.length();
 	}
+
+	/* Create a method to reverse string */
+	public static String reverseString(String str) {		
+		String reverse = "";
+		int len = countStringLen(str) - 1;
+		for (int i = len; i >= 0; i--)	
+			reverse = reverse + str.charAt(i);		
+		return reverse;
+	}
+	
 
 
 }
